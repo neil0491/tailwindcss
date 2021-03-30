@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Metropolis";
+        src: url("../fonts/Metropolis-Bold.eot");
+        src: local("Metropolis Bold"), local("Metropolis-Bold"),
+            url("Metropolis-Bold.eot?#iefix") format("embedded-opentype"), url("Metropolis-Bold.woff2") format("woff2"),
+            url("Metropolis-Bold.woff") format("woff"), url("Metropolis-Bold.ttf") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Metropolis Extra";
+        src: url("Metropolis-ExtraBold.eot");
+        src: local("Metropolis Extra Bold"), local("Metropolis-ExtraBold"),
+            url("Metropolis-ExtraBold.eot?#iefix") format("embedded-opentype"),
+            url("Metropolis-ExtraBold.woff2") format("woff2"), url("Metropolis-ExtraBold.woff") format("woff"),
+            url("Metropolis-ExtraBold.ttf") format("truetype");
+        font-weight: 800;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Metropolis";
+        src: url("Metropolis-Medium.eot");
+        src: local("Metropolis Medium"), local("Metropolis-Medium"),
+            url("Metropolis-Medium.eot?#iefix") format("embedded-opentype"),
+            url("Metropolis-Medium.woff2") format("woff2"), url("Metropolis-Medium.woff") format("woff"),
+            url("Metropolis-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    body {
+        font-family: "Metropolis", "serif";
+        font-style: normal;
+        /* background-color: #E5E5E5; */
+    }
+
+    .logo {
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.9);
+        text-shadow: rgba(0, 0, 0, 0.3) -2px 5px 5px;
+        /* -webkit-text-fill-color: rgba(0,0,0,0.9); */
+    }
+    h1 {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 4rem;
+        line-height: 4rem;
+        /* identical to box height */
+
+        letter-spacing: 0.01em;
+
+        /* color: #c4c4c4; */
+    }
+    h2 {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 3rem;
+        line-height: 3rem;
+        /* identical to box height */
+
+        letter-spacing: 0.01em;
+
+        color: #c4c4c4;
+    }
+    h3 {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 2rem;
+        /* identical to box height */
+
+        letter-spacing: 0.01em;
+
+        /* color: #c4c4c4; */
+    }
+    .paragrapf-1 {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        /* identical to box height */
+
+        /* color: #c4c4c4; */
+    }
+    .paragrapf-2 {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1rem;
+        /* identical to box height */
+
+        /* color: #c4c4c4; */
+    }
+    .paragrapf-3 {
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        /* identical to box height */
+
+        /* color: #c4c4c4; */
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-house {
+        height: 624px;
+    }
+    .swiper-container {
+        width: 600px;
+        height: 300px;
+    }
+    .mob-menu {
+        border: 2px solid transparent;
+    }
+    .mob-menu:hover {
+        border-color: red;
+    }
+    .nav-mobile {
+    }
+    .fixed-button {
+        z-index: 9999;
+        margin-right: 5px;
+        /* position: rela;
+          top: 1rem;
+          right: 1rem; */
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        color: white !important;
+    }
+}
+
+@layer components {
+    .responsive-hidden-block {
+        display: block;
+        @media only screen and (min-width: 1024px) {
+            display: none;
+        }
+    }
+    .hero-slider{
+        /* z-index: 999 !important; */
+    }
+    .navigation-btn{
+        font-size: 0.5rem !important;
+    }
+    .swiper-button-prev{
+        font-size: 10px !important;
+    }
+
+    .slide-testimonies {
+        @apply space-y-4 mb-10 w-1/3 text-sm;
+    }
+    .next-testimonial {
+        @apply bg-secondary-color p-9;
+    }
+    .prev-testimonial {
+        @apply bg-gray-100 p-9;
+    }
+
+    .icon {
+        @apply w-6 h-6 inline-block;
+    }
+
+    .input-icon {
+        @apply p-4 bg-6 bg-no-repeat  pl-10 bg-section-color rounded-sm outline-none;
+        background-position: 0.5rem 1rem;
+        stroke: red;
+    }
+
+    .hero-slider {
+        position: absolute !important;
+        @apply w-full md:w-1/2 top-0 right-0 h-full z-50;
+    }
+    .container-cards {
+        @apply flex flex-col  items-stretch lg:flex-row items-center flex-wrap lg:space-x-10 mx-auto;
+    }
+    .card {
+        @apply flex-1 mt-10 py-14 px-11 bg-white shadow-lg hover:bg-main-color  overflow-hidden hover:text-indigo-50 transition ease-in duration-500;
+    }
+    .card:hover img {
+        opacity: 0.1;
+    }
+
+    .title-section {
+        @apply h-16 text-base font-bold uppercase;
+    }
+    .title-section__content {
+        @apply border font-bold border-title-color rounded-full p-4 mr-9;
+    }
+
+    .btn-properties {
+        @apply lg:text-2xl text-lg mt-8 lg:mt-0 border-main-color border-2 py-5 px-8 flex items-center hover:border-secondary-color hover:text-secondary-color;
+    }
+    .slider-card {
+        @apply space-y-4  mb-10 w-96;
+    }
+    .slider-card__img {
+        @apply min-w-full img-house relative;
+    }
+    .slider-card__title {
+        @apply paragrapf-1 pt-4;
+    }
+    .slider-card__subtitle {
+        @apply paragrapf-2;
+    }
+    .slider-card__price {
+        @apply text-secondary-color text-xl  font-extralight text-base;
+    }
+}

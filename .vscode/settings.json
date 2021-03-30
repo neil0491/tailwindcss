@@ -1,0 +1,7 @@
+{
+    "tailwindCSS.colorDecorators": "on",
+    "tailwindCSS.validate": false,
+    "tailwindCSS.lint.invalidApply": "ignore",
+    "tailwindCSS.emmetCompletions": true,
+    "typescript.locale": "ru"
+}
