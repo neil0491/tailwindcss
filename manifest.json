@@ -1,0 +1,25 @@
+{
+  "index.html": {
+    "file": "assets/index.8a466d91.js",
+    "src": "index.html",
+    "isEntry": true,
+    "css": [
+      "assets/index.50e52504.css"
+    ],
+    "assets": [
+      "assets/Metropolis-Bold.9c453df3.eot",
+      "assets/Metropolis-Bold.e0f909d8.woff2",
+      "assets/Metropolis-Bold.17dd4f7e.woff",
+      "assets/Metropolis-Bold.d54c5419.ttf",
+      "assets/Metropolis-ExtraBold.7fcce8b6.eot",
+      "assets/Metropolis-ExtraBold.d3b0c6dc.woff2",
+      "assets/Metropolis-ExtraBold.69e9e093.woff",
+      "assets/Metropolis-ExtraBold.93a50351.ttf",
+      "assets/Metropolis-Medium.9b097521.woff2",
+      "assets/Metropolis-Medium.0eefd93a.woff",
+      "assets/Metropolis-Medium.b8416a6e.ttf",
+      "assets/location.4c8f8b5f.svg",
+      "assets/house.9070e81c.svg"
+    ]
+  }
+}
